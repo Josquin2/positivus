@@ -1,0 +1,24 @@
+.main-page-header {
+  padding: 60px 6.94vw 0px 6.94vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-links {
+    display: flex;
+    gap: 40px;
+
+    .one-link {
+      font-size: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+    }
+    .header-button {
+      border: 1px solid #000000;
+      border-radius: 14px;
+      padding: 20px 35px;
+    }
+  }
+}

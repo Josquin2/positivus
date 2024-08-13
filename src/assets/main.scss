@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #191a23;
+}
+
+body {
+  font-family: 'SpaceGrotesk';
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+header {
+  * {
+    font-family: 'SpaceGrotesk';
+    font-weight: 300;
+  }
+}
+
+// FONTS
+@import url('/src/assets/fonts.scss');
+
+// COMPONENTS
+@import url('/src/assets/components/header.scss');
+@import url('/src/assets/components/first-view.scss');
