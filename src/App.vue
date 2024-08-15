@@ -4,6 +4,8 @@ import FirstView from '@/components/FirstView.vue'
 import Logotypes from '@/components/Logotypes.vue'
 import Divider from '@/components/Divider.vue'
 import AllServices from '@/components/AllServices.vue'
+import Proposal from '@/components/Proposal.vue'
+import AllWorking from '@/components/AllWorking.vue'
 </script>
 
 <template>
@@ -17,6 +19,13 @@ import AllServices from '@/components/AllServices.vue'
       :max-width="580"
     />
     <AllServices />
+    <Proposal />
+    <Divider
+      title="Case Studies"
+      text="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+      :max-width="580"
+    />
+    <AllWorking />
   </div>
 </template>
 

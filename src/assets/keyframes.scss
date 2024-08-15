@@ -1,0 +1,17 @@
+@keyframes rotate-to {
+  from {
+    rotate: 90deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+
+@keyframes rotate-from {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 90deg;
+  }
+}
