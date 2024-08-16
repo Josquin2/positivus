@@ -16,7 +16,6 @@
 
 <style lang="scss">
 .proposal-block {
-  margin: 0px 6.94vw;
   width: 1240px;
   height: 347px;
   background-color: #f3f3f3;

@@ -44,7 +44,6 @@ const data = [
 <style lang="scss">
 .all-working {
   margin-top: 80px;
-  padding: 0px 6.94vw;
   display: flex;
   flex-direction: column;
   gap: 30px;

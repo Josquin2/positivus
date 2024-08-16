@@ -46,7 +46,6 @@ import OneService from '@/components/OneService.vue'
 <style lang="scss">
 .all-services {
   margin-top: 80px;
-  padding: 0px 6.94vw;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;

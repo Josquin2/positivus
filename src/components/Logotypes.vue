@@ -11,7 +11,6 @@
 
 <style lang="scss">
 .logotypes {
-  padding: 0px 6.94vw;
   display: flex;
   gap: 95.8px;
 
