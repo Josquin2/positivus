@@ -3,25 +3,25 @@ import OneTeamMember from '@/components/OneTeamMember.vue'
 
 const team = [
   {
-    image: '/team/members/john-smith.png',
+    image: 'team/members/john-smith.png',
     name: 'John Smith',
     position: 'CEO and Founder',
     text: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy'
   },
   {
-    image: '/team/members/jane-doe.png',
+    image: 'team/members/jane-doe.png',
     name: 'Jane Doe',
     position: 'Director of Operations',
     text: '7+ years of experience in project management and team leadership. Strong organizational and communication skills'
   },
   {
-    image: '/team/members/michael-brown.png',
+    image: 'team/members/michael-brown.png',
     name: 'Michael Brown',
     position: 'Senior SEO Specialist',
     text: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization'
   },
   {
-    image: '/team/members/emily-johnson.png',
+    image: 'team/members/emily-johnson.png',
     name: 'Emily Johnson',
     position: 'PPC Manager',
     text: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis'
