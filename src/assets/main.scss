@@ -5,6 +5,12 @@
   color: #191a23;
 }
 
+input,
+button,
+textarea:focus {
+  outline-width: 0px;
+}
+
 .positivus-main-page {
   header {
     padding: 60px 99px 0px 99px;
