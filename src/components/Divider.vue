@@ -16,7 +16,6 @@ const props = defineProps({
 <style lang="scss">
 .divider {
   margin-top: 140px;
-  padding: 0px 6.94vw;
   display: flex;
   gap: 40px;
   align-items: center;
