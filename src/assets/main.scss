@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   color: #191a23;
+  font-family: 'SpaceGrotesk';
+  font-weight: 200;
 }
 
 input,
@@ -15,20 +17,17 @@ textarea:focus {
   header {
     padding: 60px 99px 0px 99px;
     * {
-      font-family: 'SpaceGrotesk';
       font-weight: 300;
     }
   }
   body {
     padding: 0px 99px;
-    font-family: 'SpaceGrotesk';
     transition:
       background-color 0.5s ease,
       color 0.5s ease;
   }
   footer {
     margin: 140px 99px 0px 99px;
-    font-family: 'SpaceGrotesk';
   }
 }
 

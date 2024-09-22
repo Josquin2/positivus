@@ -5,15 +5,15 @@
       <div class="inputs">
         <div>
           <p>Name</p>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder="Name" />
         </div>
         <div>
           <p>Email*</p>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder="Email" />
         </div>
         <div>
           <p>Message*</p>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
         </div>
       </div>
       <div class="button">
