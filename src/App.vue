@@ -5,6 +5,7 @@ import Logotypes from '@/components/Logotypes.vue'
 import Divider from '@/components/Divider.vue'
 import AllServices from '@/components/AllServices.vue'
 import Proposal from '@/components/Proposal.vue'
+import CaseStudies from '@/components/CaseStudies.vue'
 import AllWorking from '@/components/AllWorking.vue'
 import TeamMembers from '@/components/TeamMembers.vue'
 import Testimonials from '@/components/Testimonials.vue'
@@ -28,6 +29,12 @@ import Contact from '@/components/Contact.vue'
         title="Case Studies"
         text="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
         :max-width="580"
+      />
+      <CaseStudies />
+      <Divider
+        title="Our Working Process"
+        text="Step-by-Step Guide to Achieving Your Business Goals"
+        :max-width="300"
       />
       <AllWorking />
       <Divider
