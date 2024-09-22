@@ -8,37 +8,37 @@ import OneService from '@/components/OneService.vue'
       background-title="green"
       color="gray"
       title="Search engine optimization"
-      image="/services/first.png"
+      image="services/first.png"
     />
     <OneService
       background-title="white"
       color="green"
       title="Pay-per-click advertising"
-      image="/services/second.png"
+      image="services/second.png"
     />
     <OneService
       background-title="white"
       color="black"
       title="Social Media Marketing"
-      image="/services/third.png"
+      image="services/third.png"
     />
     <OneService
       background-title="green"
       color="gray"
       title="Email Marketing"
-      image="/services/fourth.png"
+      image="services/fourth.png"
     />
     <OneService
       background-title="white"
       color="green"
       title="Content Creation"
-      image="/services/fifth.png"
+      image="services/fifth.png"
     />
     <OneService
       background-title="green"
       color="black"
       title="Analytics and Tracking"
-      image="/services/third.png"
+      image="services/third.png"
     />
   </div>
 </template>
