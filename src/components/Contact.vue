@@ -35,6 +35,8 @@
   padding: 60px 0px 80px 100px;
   border-radius: 45px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .left {
     display: flex;
