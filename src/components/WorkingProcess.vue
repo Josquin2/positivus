@@ -23,7 +23,7 @@ function onMoreClick(id: String) {
         <h4>{{ props.title }}</h4>
       </div>
       <div class="button">
-        <button @click="onMoreClick('process-' + props.id)">
+        <button>
           <div class="sign">
             <ShortLine class="rotated" />
             <ShortLine />
@@ -54,6 +54,7 @@ function onMoreClick(id: String) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: default;
     .title {
       display: flex;
       align-items: center;
