@@ -42,14 +42,21 @@
       font-weight: 300;
     }
     button {
+      cursor: pointer;
       width: fit-content;
       padding: 20px 35px;
       background-color: #191a23;
       color: #ffffff;
       font-size: 20px;
       font-weight: 300;
-      border: none;
+      border: 0px solid #191a23;
       border-radius: 14px;
+      transition: 0.2s;
+    }
+    button:hover {
+      background-color: #b9ff66;
+      color: #000000;
+      border-bottom: 8px solid #191a23;
     }
   }
   .right {

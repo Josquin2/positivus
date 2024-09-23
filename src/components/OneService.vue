@@ -76,9 +76,11 @@ const colors = {
     }
 
     .learn-more {
+      cursor: pointer;
       display: flex;
       align-items: center;
       gap: 15px;
+      transition: 0.2s;
 
       img {
         zoom: 0.5;
@@ -87,6 +89,10 @@ const colors = {
       p {
         font-size: 20px;
       }
+    }
+
+    .learn-more:hover {
+      transform: scale(1.1);
     }
   }
 

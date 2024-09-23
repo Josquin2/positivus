@@ -15,11 +15,20 @@
       color: #000000;
       border: none;
       cursor: pointer;
+      transition: 0.2s;
+    }
+    .one-link:hover {
+      color: #808080;
     }
     .header-button {
       border: 1px solid #000000;
       border-radius: 14px;
       padding: 20px 35px;
+      transition: 0.3s;
+    }
+    .header-button:hover {
+      background-color: #000000;
+      color: #ffffff;
     }
   }
 }

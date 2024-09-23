@@ -80,9 +80,15 @@
         background-color: #191a23;
         color: #ffffff;
         height: 68px;
-        border: none;
+        border: 0px solid #191a23;
         border-radius: 14px;
         font-size: 20px;
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: #b9ff66;
+        color: #000000;
+        border-bottom: 8px solid #191a23;
       }
     }
   }
