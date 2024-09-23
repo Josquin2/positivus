@@ -12,7 +12,11 @@ function onMoreClick(id: String) {
 </script>
 
 <template>
-  <div class="one-working-process" :id="`process-${props?.id}`">
+  <div
+    class="one-working-process"
+    :id="`process-${props?.id}`"
+    @click="onMoreClick('process-' + props.id)"
+  >
     <div class="up">
       <div class="title">
         <h1>{{ '0' + (props.id + 1) }}</h1>

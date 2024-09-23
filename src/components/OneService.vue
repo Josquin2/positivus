@@ -9,22 +9,22 @@ const props = defineProps({
 const colors = {
   gray: {
     background: '#f3f3f3',
-    arrow: '/services/arrows/black.png',
+    arrow: 'services/arrows/black.png',
     font: '#000000'
   },
   green: {
     background: '#b9ff66',
-    arrow: '/services/arrows/black.png',
+    arrow: 'services/arrows/black.png',
     font: '#000000'
   },
   black: {
     background: '#191a23',
-    arrow: '/services/arrows/white.png',
+    arrow: 'services/arrows/white.png',
     font: '#ffffff'
   },
   white: {
     background: '#ffffff',
-    arrow: '/services/arrows/white.png',
+    arrow: 'services/arrows/white.png',
     font: '#000000'
   }
 }
