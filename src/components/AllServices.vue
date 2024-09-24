@@ -50,4 +50,10 @@ import OneService from '@/components/OneService.vue'
   gap: 40px;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 800px) {
+  .all-services {
+    gap: 40px 0px;
+  }
+}
 </style>
