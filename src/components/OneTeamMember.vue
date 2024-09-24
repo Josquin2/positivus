@@ -94,4 +94,60 @@ const props = defineProps({
     }
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .one-team-member {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .one-team-member {
+    .up {
+      .about {
+        .short-info {
+          h2 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .down {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .one-team-member {
+    width: 80vw;
+    height: 308px;
+
+    .down {
+      max-width: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .one-team-member {
+    width: 90vw;
+    height: 330px;
+    padding: 30px 30px;
+
+    .up {
+      .about {
+        .photo {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

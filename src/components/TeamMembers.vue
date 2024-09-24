@@ -60,4 +60,21 @@ const team = [
   flex-wrap: wrap;
   gap: 39px;
 }
+@media only screen and (max-width: 1280px) {
+  .all-team-members {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .all-team-members {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .all-team-members {
+    gap: 30px;
+  }
+}
 </style>
