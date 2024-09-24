@@ -53,6 +53,7 @@ import OneService from '@/components/OneService.vue'
 
 @media only screen and (max-width: 800px) {
   .all-services {
+    margin-top: 40px;
     gap: 40px 0px;
   }
 }

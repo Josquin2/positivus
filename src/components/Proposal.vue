@@ -66,4 +66,53 @@
     }
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .proposal-block {
+    .right {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .proposal-block {
+    .right {
+      img {
+        zoom: 0.3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .proposal-block {
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .proposal-block {
+    margin-top: 40px;
+    padding: 35px;
+
+    .left {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+      button {
+        font-size: 16px;
+      }
+    }
+  }
+}
 </style>
