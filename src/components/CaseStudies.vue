@@ -77,6 +77,7 @@ import GreenArrow from '@/components/icons/GreenArrow.vue'
 
 @media only screen and (max-width: 1100px) {
   .case-studies-block {
+    margin-top: 40px;
     overflow: scroll;
     background-color: #ffffff;
     padding: 0;

@@ -139,4 +139,50 @@ function onMoreClick(id: String) {
     opacity: 100%;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .extended {
+    height: 230px !important;
+  }
+  .one-working-process {
+    height: 98px;
+    padding: 30px;
+    .up {
+      .title {
+        h1 {
+          font-size: 28px;
+        }
+        h4 {
+          margin-left: 10px;
+          font-size: 16px;
+        }
+      }
+      .button {
+        button {
+          width: 30px;
+          height: 30px;
+
+          .sign {
+            .short-line-25 {
+              width: 13px;
+              height: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .extended {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .extended {
+    height: 350px !important;
+  }
+}
 </style>

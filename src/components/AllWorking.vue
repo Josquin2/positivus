@@ -48,4 +48,16 @@ const data = [
   flex-direction: column;
   gap: 30px;
 }
+
+@media only screen and (max-width: 1100px) {
+  .all-working {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .all-working {
+    gap: 20px;
+  }
+}
 </style>

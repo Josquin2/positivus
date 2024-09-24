@@ -78,4 +78,9 @@ import Footer from '@/components/Footer.vue'
     overflow: hidden;
   }
 }
+@media only screen and (max-width: 700px) {
+  #app {
+    max-width: 90vw;
+  }
+}
 </style>
