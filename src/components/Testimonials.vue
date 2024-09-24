@@ -76,7 +76,7 @@ function onPageClick(index: number) {
 </script>
 
 <template>
-  <div class="testimonials-block">
+  <div class="testimonials-block-xl">
     <div class="carousel">
       <div class="cards" :style="`transform: translateX(calc(${translate}px))`">
         <div class="one-card" v-for="card in cards">
@@ -111,7 +111,7 @@ function onPageClick(index: number) {
 </template>
 
 <style lang="scss">
-.testimonials-block {
+.testimonials-block-xl {
   margin-top: 80px;
 
   .carousel {

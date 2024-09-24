@@ -58,6 +58,6 @@ const team = [
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 39px;
 }
 </style>

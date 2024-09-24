@@ -66,5 +66,16 @@ import Footer from '@/components/Footer.vue'
   align-items: center;
   margin: auto;
   max-width: 1240px;
+
+  body {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #app {
+    max-width: 85vw;
+    overflow: hidden;
+  }
 }
 </style>
