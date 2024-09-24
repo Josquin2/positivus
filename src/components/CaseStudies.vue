@@ -74,4 +74,30 @@ import GreenArrow from '@/components/icons/GreenArrow.vue'
     }
   }
 }
+
+@media only screen and (max-width: 1100px) {
+  .case-studies-block {
+    overflow: scroll;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    gap: 20px;
+    .one-case {
+      width: 350px;
+      height: auto;
+      background-color: #191a23;
+      padding: 42px 50px;
+      border-radius: 45px;
+
+      h5 {
+        max-width: 250px;
+        width: 80vw;
+        font-size: 16px;
+      }
+    }
+    hr {
+      display: none;
+    }
+  }
+}
 </style>
