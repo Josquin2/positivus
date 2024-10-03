@@ -136,6 +136,7 @@
         border: none;
         font-size: 20px;
         font-weight: 200;
+        text-wrap: nowrap;
       }
       input {
         min-width: 285px;
@@ -173,6 +174,111 @@
 
   * {
     color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .footer {
+    .middle {
+      .right {
+        flex-direction: column;
+        padding: 58px 80px;
+
+        input,
+        button {
+          width: 290px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .footer {
+    .top {
+      .social {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .footer {
+    .top {
+      flex-direction: column;
+      gap: 37px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    .middle {
+      flex-direction: column;
+      gap: 37px;
+
+      .left {
+        h6 {
+          width: 100%;
+        }
+        * {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .footer {
+    margin-top: 90px;
+    border-radius: 0;
+
+    .top {
+      .links {
+        flex-direction: column;
+      }
+    }
+
+    .middle {
+      .left {
+        align-items: center;
+
+        h6 {
+          width: fit-content;
+        }
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding: 50px 20px 30px 20px;
+
+    .top {
+      .links {
+        gap: 15px;
+      }
+    }
+
+    .middle {
+      .right {
+        padding: 30px;
+      }
+    }
   }
 }
 </style>
