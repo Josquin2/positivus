@@ -23,7 +23,7 @@ function onMoreClick(id: String) {
         <h4>{{ props.title }}</h4>
       </div>
       <div class="button">
-        <button @click="onMoreClick('process-' + props.id)">
+        <button>
           <div class="sign">
             <ShortLine class="rotated" />
             <ShortLine />
@@ -54,6 +54,7 @@ function onMoreClick(id: String) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: default;
     .title {
       display: flex;
       align-items: center;
@@ -136,6 +137,52 @@ function onMoreClick(id: String) {
   }
   .bottom {
     opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .extended {
+    height: 230px !important;
+  }
+  .one-working-process {
+    height: 98px;
+    padding: 30px;
+    .up {
+      .title {
+        h1 {
+          font-size: 28px;
+        }
+        h4 {
+          margin-left: 10px;
+          font-size: 16px;
+        }
+      }
+      .button {
+        button {
+          width: 30px;
+          height: 30px;
+
+          .sign {
+            .short-line-25 {
+              width: 13px;
+              height: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .extended {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .extended {
+    height: 350px !important;
   }
 }
 </style>

@@ -9,6 +9,7 @@ import CaseStudies from '@/components/CaseStudies.vue'
 import AllWorking from '@/components/AllWorking.vue'
 import TeamMembers from '@/components/TeamMembers.vue'
 import Testimonials from '@/components/Testimonials.vue'
+import TestimonialsPhone from '@/components/TestimonialsPhone.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
 </script>
@@ -49,6 +50,7 @@ import Footer from '@/components/Footer.vue'
       :max-width="473"
     />
     <Testimonials />
+    <TestimonialsPhone />
     <Divider
       title="Contact Us"
       text="Connect with Us: Let's Discuss Your Digital Marketing Needs"
@@ -66,5 +68,20 @@ import Footer from '@/components/Footer.vue'
   align-items: center;
   margin: auto;
   max-width: 1240px;
+
+  body {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #app {
+    max-width: 85vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #app {
+    max-width: 90vw;
+  }
 }
 </style>

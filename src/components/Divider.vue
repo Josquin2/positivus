@@ -33,4 +33,21 @@ const props = defineProps({
     font-weight: 200;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .divider {
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+  }
+}
 </style>

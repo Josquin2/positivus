@@ -4,12 +4,6 @@ import WhiteArrow from '@/components/icons/WhiteArrow.vue'
 import PageIcon from '@/components/icons/PageIcon.vue'
 const cards = [
   {
-    author: 'John Smith5',
-    position: 'Marketing Director at XYZ Corp',
-    words:
-      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
-  },
-  {
     author: 'John Smith1',
     position: 'Marketing Director at XYZ Corp',
     words:
@@ -38,47 +32,41 @@ const cards = [
     position: 'Marketing Director at XYZ Corp',
     words:
       '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
-  },
-  {
-    author: 'John Smith1',
-    position: 'Marketing Director at XYZ Corp',
-    words:
-      '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
   }
 ]
 
-const translate = ref(-346)
+const translate = ref(0)
 
 const currentPage = ref(0)
 
 function onNextClick() {
   if (currentPage.value < 4) {
     currentPage.value += 1
-    translate.value -= 656
+    translate.value -= 118.5
   }
 }
 
 function onPrevClick() {
   if (currentPage.value > 0) {
     currentPage.value -= 1
-    translate.value += 656
+    translate.value += 100
   }
 }
 
 function onPageClick(index: number) {
   if (currentPage.value < index) {
-    translate.value -= (index - currentPage.value) * 656
+    translate.value -= (index - currentPage.value) * 118.5
   } else if (currentPage.value > index) {
-    translate.value += (currentPage.value - index) * 656
+    translate.value += (currentPage.value - index) * 118.5
   }
   currentPage.value = index
 }
 </script>
 
 <template>
-  <div class="testimonials-block-xl">
+  <div class="testimonials-block-m">
     <div class="carousel">
-      <div class="cards" :style="`transform: translateX(calc(${translate}px))`">
+      <div class="cards" :style="`transform: translateX(${translate}%)`">
         <div class="one-card" v-for="card in cards">
           <div class="words">{{ card?.words }}</div>
           <div class="author">
@@ -95,7 +83,7 @@ function onPageClick(index: number) {
           <button
             class="one-page"
             :class="{ 'current-page': currentPage == index }"
-            v-for="(page, index) in cards.length - 2"
+            v-for="(page, index) in cards.length"
             :key="index"
             @click="onPageClick(index)"
           >
@@ -111,107 +99,80 @@ function onPageClick(index: number) {
 </template>
 
 <style lang="scss">
-.testimonials-block-xl,
 .testimonials-block-m {
-  margin-top: 80px;
+  display: none;
+  margin-top: 40px;
 
   .carousel {
-    max-width: 1240px;
     width: 100%;
-    padding: 84px 0px 68px 0px;
-    background-color: #191a23;
-    border-radius: 45px;
-    min-height: 625px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 30px 30px 60px 30px;
+    min-height: 554px;
 
     .cards {
-      display: flex;
-      gap: 50px;
-      transition: 0.5s;
+      gap: 30px;
 
       .one-card {
-        min-width: 606px;
+        min-width: 100%;
 
         .words {
-          color: #ffffff;
-          border: 1px solid #b9ff66;
-          border-radius: 45px;
-          position: relative;
-          padding: 48px 52px;
+          border-radius: 40px;
+          padding: 30px;
+          font-size: 16px;
+          font-weight: 100;
         }
-
         .author {
-          margin-left: 75px;
-          margin-top: 48px;
+          margin-left: 60px;
+          margin-top: 45px;
           h6 {
-            color: #b9ff66;
-            font-size: 20px;
-            font-weight: 300;
+            font-size: 16px;
           }
           p {
-            color: #ffffff;
-            font-size: 18px;
+            font-size: 14px;
           }
         }
-        .words::after {
-          content: '';
-          position: absolute;
-          bottom: -21.2px;
-          left: 60px;
-          width: 40px;
-          height: 40px;
-          border: 1px solid #b9ff66;
-          border-top: none;
-          border-left: none;
-          background-color: #191a23;
-          rotate: 45deg;
-        }
+      }
+      .words::after {
+        left: 48px;
       }
     }
 
     .navigation {
-      display: flex;
-      justify-content: center;
-      gap: 180px;
-
-      .arrow {
-        transition: 0.2s;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-
-        .left-arrow {
-          rotate: 180deg;
-        }
-      }
-      .disabled-arrow {
-        cursor: default;
-        opacity: 30%;
-      }
+      gap: 0px;
+      justify-content: space-between;
 
       .pages {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+        gap: 17px;
+      }
 
-        .one-page {
-          display: flex;
-          cursor: pointer;
-          background-color: transparent;
-          border: none;
-        }
+      .arrow {
+        zoom: 0.83;
+      }
+    }
+  }
+}
 
-        .current-page {
-          cursor: default;
-          svg {
-            path {
-              fill: #b9ff66;
-            }
-          }
-        }
+@media only screen and (max-width: 1280px) {
+  .testimonials-block-xl {
+    display: none;
+  }
+
+  .testimonials-block-m {
+    display: flex;
+
+    .carousel {
+      height: fit-content;
+      .navigation {
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonials-block-m {
+    .carousel {
+      .navigation {
+        justify-content: space-between;
       }
     }
   }
