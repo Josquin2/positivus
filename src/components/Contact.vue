@@ -99,4 +99,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .contact-block {
+    padding: 60px 100px 80px 100px;
+    .right {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .contact-block {
+    padding: 40px 30px 50px 30px;
+  }
+}
 </style>
