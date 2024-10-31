@@ -9,7 +9,7 @@
     display: flex;
     gap: 40px;
 
-    .one-link {
+    .one__link {
       font-size: 20px;
       background-color: #ffffff;
       color: #000000;
@@ -17,16 +17,16 @@
       cursor: pointer;
       transition: 0.2s;
     }
-    .one-link:hover {
+    .one__link:hover {
       color: #808080;
     }
-    .header-button {
+    .header--button {
       border: 1px solid #000000;
       border-radius: 14px;
       padding: 20px 35px;
       transition: 0.3s;
     }
-    .header-button:hover {
+    .header--button:hover {
       background-color: #000000;
       color: #ffffff;
     }
