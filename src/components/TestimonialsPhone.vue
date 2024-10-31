@@ -42,22 +42,22 @@ const currentPage = ref(0)
 function onNextClick() {
   if (currentPage.value < 4) {
     currentPage.value += 1
-    translate.value -= 118.5
+    translate.value -= 120
   }
 }
 
 function onPrevClick() {
   if (currentPage.value > 0) {
     currentPage.value -= 1
-    translate.value += 100
+    translate.value += 120
   }
 }
 
 function onPageClick(index: number) {
   if (currentPage.value < index) {
-    translate.value -= (index - currentPage.value) * 118.5
+    translate.value -= (index - currentPage.value) * 120
   } else if (currentPage.value > index) {
-    translate.value += (currentPage.value - index) * 118.5
+    translate.value += (currentPage.value - index) * 120
   }
   currentPage.value = index
 }
@@ -105,14 +105,16 @@ function onPageClick(index: number) {
 
   .carousel {
     width: 100%;
-    padding: 30px 30px 60px 30px;
-    min-height: 554px;
+    padding: 70px 110px 60px 110px;
+    min-height: 454px;
+    gap: 60px;
 
     .cards {
-      gap: 30px;
+      gap: 0px;
 
       .one-card {
         min-width: 100%;
+        margin-right: 20%;
 
         .words {
           border-radius: 40px;
@@ -171,6 +173,7 @@ function onPageClick(index: number) {
 @media only screen and (max-width: 800px) {
   .testimonials-block-m {
     .carousel {
+      padding: 30px 30px 60px 30px;
       .navigation {
         justify-content: space-between;
       }
