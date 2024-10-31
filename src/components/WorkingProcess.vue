@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import ShortLine from '@/components/icons/ShortLine.vue'
-const props = defineProps({
-  id: Number,
-  title: String,
-  text: String
-})
+const props = defineProps<{
+  id: number
+  title?: string
+  text?: string
+}>()
 
-function onMoreClick(id: String) {
+function onMoreClick(id: string) {
   document.getElementById(id)?.classList.toggle('extended')
 }
 </script>

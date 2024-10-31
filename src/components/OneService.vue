@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: String,
-  image: String,
-  backgroundTitle: String,
-  color: String
-})
+const props = defineProps<{
+  title: string
+  image: string
+  backgroundTitle: keyof typeof colors
+  color: keyof typeof colors
+}>()
 
 const colors = {
   gray: {
