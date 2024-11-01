@@ -16,7 +16,7 @@ function onHamburgerClick() {
       <button class="one__link">Use Cases</button>
       <button class="one__link">Pricing</button>
       <button class="one__link">Blog</button>
-      <button class="one__link header-button">Request a quote</button>
+      <button class="one__link header--button">Request a quote</button>
     </div>
     <div class="header-links-phone nav-closed" id="nav-phone">
       <button class="hamburger" @click="onHamburgerClick()">
